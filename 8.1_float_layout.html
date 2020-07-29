@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8.1 float layout</title>
+  <style>
+    *{
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+    .container{
+      max-width:960px ;
+      margin: 30px auto;
+    }
+    .head{
+      background: orange;                                         
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .twobox{
+      display: inline;
+      
+    }
+    .sidebar{
+      background:green;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+      
+      float: left;
+      width: 30%;
+      height: 405px;
+    }
+      .mainbox{
+        background: purple;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+      height: 405px;
+      text-overflow: clip;
+      float: right;
+      width: 69%;
+      text-align: right;
+      
+      
+      }
+    .foot{
+      background:blue;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .clr{
+      clear: both;
+    }
+    .sidebar h4{
+      text-align: start;
+      
+    }
+    
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <div class="head"><span>Header</span></div>
+  <div class="twobox">
+    <div class="sidebar"><h4>Sidebar</h4></div>
+    <div class="mainbox"><h4>Main</h4></div>
+  </div>
+  <div class="clr"></div>
+  <div class="foot"><span>Footer</span></div>
+</div>
+</body>
+</html>
